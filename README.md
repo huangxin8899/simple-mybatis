@@ -20,5 +20,5 @@
    - 实现了 `SQLSessionFactory` 的实现类 `DefaultSQLSessionFactory`，负责创建 `SQLSession` 对象。
    - 实现了 `SQLSession` 的实现类 `DefaultSQLSession`，包括 CRUD 方法和 `getMapper()` 方法，它们委托给 `Executor` 来执行 SQL。
 
-5. **Executor 接口和实现类 `SimpleExecutor`**
+5. **`Executor` 接口和实现类 `SimpleExecutor`**
    - `SimpleExecutor` 是实际执行 SQL 的类，它调用 JDBC API 来执行查询和修改操作。
