@@ -12,13 +12,12 @@
    - 创建了一个 `Resources` 工具类，用于加载配置文件，将文件加载成字节流并加载到内存中。
 
 3. **解析配置文件，创建并填充核心配置类对象**
-   - 定义了 `SQLSessionFactoryBuilder` 类和 `build()` 方法，用于解析 XML，创建并封装 `Configuration` 和 `MappedStatement`。
-   - 创建 `SQLSessionFactory`。
+   - 定义了 `SqlSessionFactoryBuilder` 类和 `build()` 方法，用于解析 XML，创建并封装 `Configuration` 和 `MappedStatement`。
+   - 创建 `SqlSessionFactory`。
 
-4. **定义接口和实现**
-   - 定义了 `SQLSessionFactory` 和 `SQLSession` 接口。
-   - 实现了 `SQLSessionFactory` 的实现类 `DefaultSQLSessionFactory`，负责创建 `SQLSession` 对象。
-   - 实现了 `SQLSession` 的实现类 `DefaultSQLSession`，包括 CRUD 方法和 `getMapper()` 方法，它们委托给 `Executor` 来执行 SQL。
+4. **定义`SQLSessionFactory`和`SQLSession`接口**
+   - 创建 `SqlSessionFactory` 的实现类 `DefaultSqlSessionFactory`，负责创建 `SqlSession` 对象。
+   - 创建 `SqlSession` 的实现类 `DefaultSqlSession`，实现 CRUD 方法和 `getMapper()` 方法，它们委托给 `Executor` 来执行 SQL。
 
 5. **`Executor` 接口和实现类 `SimpleExecutor`**
    - `SimpleExecutor` 是实际执行 SQL 的类，它调用 JDBC API 来执行查询和修改操作。
