@@ -1,5 +1,5 @@
 # Simple-MyBatis
-这是一个我手写的简易版本的 MyBatis，通过学习 MyBatis 源码而实现的。
+这是一个我手写的简易版本的 MyBatis，通过阅读 MyBatis 源码而实现的。
 
 ## 设计思路
 这个项目的核心思路是对 JDBC 进行封装。下面是项目的主要设计思路：
