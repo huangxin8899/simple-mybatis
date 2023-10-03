@@ -1,0 +1,21 @@
+<mapper namespace="com.huangxin.mapper.UserMapper">
+    <select id="findAll" resultType="com.huangxin.entity.User">
+        select * from user
+    </select>
+
+    <select id="findByUser" resultType="com.huangxin.entity.User" paramType="com.huangxin.entity.User">
+        select * from user where id = #{id} and name = #{name}
+    </select>
+
+    <insert id="insertUser" paramType="com.huangxin.entity.User">
+        insert into user (id, name) values (#{id}, #{name})
+    </insert>
+
+    <update id="updateById" paramType="com.huangxin.entity.User">
+        update user set name = #{name} where id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        delete from user where id = #{id}
+    </delete>
+</mapper>
