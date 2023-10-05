@@ -3,6 +3,8 @@
 
 ## 设计思路
 这个项目的核心思路是对 JDBC 进行封装。下面是项目的主要设计思路：
+![simple-mybatis drawio](https://github.com/huangxin8899/simple-mybatis/assets/100120416/53574211-09a6-49cc-b202-e5fb3aab1a69)
+
 
 1. **核心配置类**
    - `Configuration`：全局配置类，对应存储在 `config.xml` 配置文件中的内容。
@@ -21,3 +23,7 @@
 
 5. **`Executor` 接口和实现类 `SimpleExecutor`**
    - `SimpleExecutor` 是实际执行 SQL 的类，它调用 JDBC API 来执行查询和修改操作。
+
+## 类图输出
+![simple-mybatis](https://github.com/huangxin8899/simple-mybatis/assets/100120416/4bf80f83-61e2-4971-83ba-bc8a75880262)
+
