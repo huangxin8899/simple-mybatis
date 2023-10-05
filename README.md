@@ -3,7 +3,8 @@
 
 ## 设计思路
 这个项目的核心思路是对 JDBC 进行封装。下面是项目的主要设计思路：
-![simple-mybatis drawio](https://github.com/huangxin8899/simple-mybatis/assets/100120416/53574211-09a6-49cc-b202-e5fb3aab1a69)
+![基本思路](https://github.com/huangxin8899/simple-mybatis/assets/100120416/0c73c93b-1bf3-4f44-b8e2-c3532d54dd05)
+
 
 
 1. **核心配置类**
